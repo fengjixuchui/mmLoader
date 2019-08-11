@@ -4,7 +4,7 @@ mmLoader is a library used for loading DLL modules from memory directly. Also, i
 
 [![Build status](https://dev.azure.com/sheentian/GitHub-CI/_apis/build/status/mmLoader/build-mmLoader-x86-x64-debug-release)](https://dev.azure.com/sheentian/GitHub-CI/_build/latest?definitionId=11)
 
-[DOC](http://tishion.github.io/mmLoader/) | [CI&CD](https://dev.azure.com/sheentian/GitHub-CI)
+[DOC](http://virtalbe.github.io/mmLoader/) | [CI&CD](https://dev.azure.com/sheentian/GitHub-CI)
 
 The CI & CD system has been moved to Azure DevOps and mmLoader will not publish more nugget packages.
 
