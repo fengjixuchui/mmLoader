@@ -1,22 +1,26 @@
-# mmLoader http://tishion.github.io/mmLoader/
+## mmLoader 
 
-Load dll modules from memory directly bypassing Window PE loader
+mmLoader is a library used for loading DLL modules from memory directly. Also, it will bypass the Windows PE loader with processing the import/export table correctly.
 
-Last build status:
+[![Build status](https://dev.azure.com/sheentian/GitHub-CI/_apis/build/status/mmLoader/build-mmLoader-x86-x64-debug-release)](https://dev.azure.com/sheentian/GitHub-CI/_build/latest?definitionId=11)
 
-[![Build status](https://ci.appveyor.com/api/projects/status/uyat3s3g76crdbkp?svg=true)](https://ci.appveyor.com/project/tishion/mmloader)
+[DOC](http://tishion.github.io/mmLoader/) | [CI&CD](https://dev.azure.com/sheentian/GitHub-CI)
 
-Nuget native package: 
- - https://www.nuget.org/packages/mmLoader.static.v141_xp
+The CI & CD system has been moved to Azure DevOps and mmLoader will not publish more nugget packages.
 
-mmLoader is used for loaing dll module from memory directly. It can bypass the windows system PE loader and load module into process  address sapce. Also it will process all the import tables and reloaction table.
+## How to use
 
 1. Use mmLoader source code:
-   - Just include the source files into your projects.
+   - Just include the source files in your projects.
 
 2. Use mmLoader static library
     - Build the projects and collect the static library file, then add reference to it in your projects.
 
-3. Use mmLoader shell code
+4. Use mmLoader shell code
    - Build project mmLoader-shellcode-generator then run it, collect the generated header file. 
    - Include the header file in your project
+
+## FAQ
+Q: Why no dynamic version? 
+
+A: Compiling mmLoader as separated dynamic module is not recommended for some obvious reasons.
