@@ -102,6 +102,7 @@ add_library(${PROJECT_NAME} STATIC
 
 # Add post build event to copy the header files
 add_custom_command(TARGET ${PROJECT_NAME} POST_BUILD
+  COMMAND ${CMAKE_COMMAND} -E make_directory ${CMAKE_SOURCE_DIR}/output/mmloader/include/
   COMMAND ${CMAKE_COMMAND} -E copy_if_different ${CMAKE_SOURCE_DIR}/src/mmloader/mmLoader.h ${CMAKE_SOURCE_DIR}/output/mmloader/include/
 )
 
