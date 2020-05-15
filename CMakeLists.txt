@@ -48,19 +48,19 @@ set(CMAKE_CONFIGURATION_TYPES Debug Release)
 
 # Default compile flags
 set(CMAKE_CXX_FLAGS 
-    "/DWIN32 /D_WINDOWS /W3 /WX /GR /GS- /Gy /FAcs"
+    "/DWIN32 /D_WINDOWS /W3 /WX /GR /GS- /Gy /FAcs /Z7 /DEBUG"
     CACHE STRING "default C++ compile flags" FORCE)
 set(CMAKE_CXX_FLAGS_DEBUG 
-    "/MTd /Zi /Ob0 /Od" 
+    "/MTd /Ob0 /Od" 
     CACHE STRING "default C++ compile flags for debug build" FORCE)
 set(CMAKE_CXX_FLAGS_RELEASE 
     "/MT /O2 /Ob2 /DNDEBUG" 
     CACHE STRING "default C++ compile flags for release build" FORCE)
 set(CMAKE_C_FLAGS 
-    "/DWIN32 /D_WINDOWS /W3 /WX /GR /GS- /Gy /FAcs"
+    "/DWIN32 /D_WINDOWS /W3 /WX /GR /GS- /Gy /FAcs /Z7 /DEBUG"
     CACHE STRING "default C++ compile flags" FORCE)
 set(CMAKE_C_FLAGS_DEBUG
-    "/MTd /Zi /Ob0 /Od" 
+    "/MTd /Ob0 /Od" 
     CACHE STRING "default C++ compile flags for debug build" FORCE)
 set(CMAKE_C_FLAGS_RELEASE 
     "/MT /O2 /Ob2 /DNDEBUG" 
