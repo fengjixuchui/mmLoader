@@ -12,6 +12,20 @@ mmLoader is a library used for loading DLL modules from memory directly. Also, i
 
 The CI & CD system has been moved to Azure DevOps and mmLoader will not publish more nugget packages.
 
+
+### vcpkg support
+mmloader is available on vcpkg now, just install it by the commmand:
+> vcpkg install mmloader:x86-windows-static
+
+> vcpkg install mmloader:x64-windows-static
+
+if you want to use mmloader in shellcod mode, you need to install it with feature shellcode:
+> vcpkg install mmloader[shellcode]:x86-windows-static
+
+> vcpkg install mmloader[shellcode]:x64-windows-static
+
+### build from source
+
 The build system has been switched to CMake, you can generate and build the project with the following commands:
 #### generate the project files
 > cmake -S . -B .build -G "Visual Studio 16 2019" -A Win32 -DBUILD_SHELLCODE_GEN=TRUE -DBUILD_MMLOADER_DEMO=TRUE
